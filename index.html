@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8db91d1e06.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .btn-clr {
+            background-color: #ABEF5F;
+        }
+    </style>
+
+    <title>Rinterio</title>
+</head>
+
+<body class="manrope-font">
+
+    <header class="bg-[#f5f5f5]">
+        <section class=" w-[90%] lg:w-4/5 mx-auto ">
+            <nav class="flex justify-between">
+
+                <!-- logo -->
+                <div class="inline-flex">
+                    <i class="fa-solid fa-arrow-right btn-clr -rotate-45 h-10 w-10 text-center  text-2xl py-1 rounded-full text-black mt-2"></i></button>
+                    <h2 class=" text-5xl font-bold px-2">Rinterio</h2>
+                </div>
+
+                <!-- nav area -->
+                <div class="hidden lg:flex flex-row justify-end w-full">
+                    
+                        <div class="">
+                            <ul class=" flex flex-row justify-between pt-3">
+                                <li><a class="font-bold" href="">Home</a></li>
+                                <li  class="pl-5"><a href="">Services</a></li>
+                                <li  class="pl-5"><a href="">Portfolio</a></li>
+                                <li  class="pl-5"><a href="">Blog</a></li>
+                                <li  class="pl-5"><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    
+
+                    <div class="pl-28 px-4">
+
+                        <!-- search icon -->
+                        <i class="fa-solid fa-magnifying-glass  bg-white border border-gray-400 rounded-full px-2 py-2"></i>
+                        <!-- cart icon -->
+                        <i class="fa-solid fa-cart-shopping bg-white border border-gray-400 rounded-full px-2 py-2"></i>
+                        <!-- button -->
+                        <button class="btn-clr px-5 py-2 rounded-3xl text-black">
+                            Book Consult
+                            <i class="fa-solid fa-arrow-right -rotate-45  text-white h-7 w-7 text-center text-lg rounded-full bg-black"></i></button>
+                    </div>
+                    
+                </div>
+                <div class="">
+                    <i class=" lg:hidden  fa-solid fa-bars text-2xl  bg-white border border-gray-400  rounded-full h-12 w-12 text-center pt-1.5 text-gray-700"></i>
+                </div>
+            </nav>
+        </section>
+    </header>
+</body>
+
+</html>
